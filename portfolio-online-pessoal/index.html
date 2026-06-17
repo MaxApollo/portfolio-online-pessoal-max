@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Max Apollo | Portfólio</title>
+  <!-- Fonte do Google Fonts: sem framework, apenas importação de fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body class="tema-escuro">
+
+  <!-- ========== CABEÇALHO / NAVEGAÇÃO ========== -->
+  <header id="cabecalho">
+    <div class="nav-container">
+      <!-- Logo / Nome -->
+      <a href="#sobre" class="nav-logo">MAX<span>.</span></a>
+
+      <!-- Botão hamburguer para mobile (controlado via JS) -->
+      <button id="btn-menu" class="btn-hamburger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menu de navegação com âncoras -->
+      <nav id="menu-nav" class="nav-links">
+        <a href="#sobre"   class="nav-item" data-secao="sobre">Sobre Mim</a>
+        <a href="#formacao" class="nav-item" data-secao="formacao">Formação</a>
+        <a href="#portfolio" class="nav-item" data-secao="portfolio">Portfólio</a>
+        <a href="#contato" class="nav-item" data-secao="contato">Contato</a>
+        <!-- Botão de alternar tema claro/escuro -->
+        <button id="btn-tema" class="btn-tema" aria-label="Alternar tema">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== SEÇÃO: SOBRE MIM ========== -->
+  <section id="sobre" class="secao">
+    <div class="container">
+      <div class="sobre-grid">
+        <!-- Bloco de texto de apresentação -->
+        <div class="sobre-texto">
+          <p class="label-secao">// sobre mim</p>
+          <h1 class="titulo-hero">
+            Olá, sou<br />
+            <span class="destaque">Max Apollo</span>
+          </h1>
+          <p class="subtitulo">Estudante de Análise e Desenvolvimento de Sistemas</p>
+          <p class="sobre-bio">
+            Apaixonado por tecnologia e em constante aprendizado, busco transformar
+            ideias em soluções digitais. Fora do mundo do código, você me encontra
+            levantando peso na academia ou no controle do videogame.
+          </p>
+          <!-- Chips de interesses -->
+          <div class="chips">
+            <span class="chip">💪 Academia</span>
+            <span class="chip">🎮 Video Games</span>
+            <span class="chip">💻 Programação</span>
+          </div>
+        </div>
+
+        <!-- Bloco visual / avatar estilizado -->
+        <div class="sobre-avatar">
+          <div class="avatar-box">
+            <div class="avatar-iniciais">MA</div>
+            <div class="avatar-borda"></div>
+          </div>
+          <!-- Informações rápidas -->
+          <div class="info-rapida">
+            <div class="info-item">
+              <span class="info-label">Localização</span>
+              <span class="info-valor">Brasil</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Curso</span>
+              <span class="info-valor">ADS</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Status</span>
+              <span class="info-valor status-ativo">Disponível ✓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO: FORMAÇÃO ========== -->
+  <section id="formacao" class="secao secao-alt">
+    <div class="container">
+      <p class="label-secao">// formação</p>
+      <h2 class="titulo-secao">Minha Trajetória</h2>
+
+      <!-- Grid de formação -->
+      <div class="formacao-grid">
+
+        <!-- Educação -->
+        <div class="formacao-coluna">
+          <h3 class="formacao-categoria">🎓 Educação</h3>
+
+          <div class="card-timeline">
+            <div class="timeline-dot"></div>
+            <div class="card-conteudo">
+              <span class="card-ano">2024 – Atual</span>
+              <h4 class="card-titulo">Análise e Desenvolvimento de Sistemas</h4>
+              <p class="card-inst">Centro Universitário Internacional UNINTER</p>
+              <p class="card-desc">Graduação tecnológica com foco em desenvolvimento web, banco de dados, lógica de programação e engenharia de software.</p>
+            </div>
+          </div>
+
+          <div class="card-timeline">
+            <div class="timeline-dot"></div>
+            <div class="card-conteudo">
+              <span class="card-ano">2023</span>
+              <h4 class="card-titulo">Ensino Médio Completo</h4>
+              <p class="card-inst">Escola Estadual</p>
+              <p class="card-desc">Conclusão do ensino médio regular.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cursos e Habilidades -->
+        <div class="formacao-coluna">
+          <h3 class="formacao-categoria">📚 Cursos & Habilidades</h3>
+
+          <div class="card-habilidade">
+            <div class="habilidade-topo">
+              <span>HTML5 & CSS3</span>
+              <span>70%</span>
+            </div>
+            <!-- Barra de progresso animada via JS -->
+            <div class="barra-fundo">
+              <div class="barra-progresso" data-progresso="70"></div>
+            </div>
+          </div>
+
+          <div class="card-habilidade">
+            <div class="habilidade-topo">
+              <span>JavaScript</span>
+              <span>50%</span>
+            </div>
+            <div class="barra-fundo">
+              <div class="barra-progresso" data-progresso="50"></div>
+            </div>
+          </div>
+
+          <div class="card-habilidade">
+            <div class="habilidade-topo">
+              <span>Lógica de Programação</span>
+              <span>65%</span>
+            </div>
+            <div class="barra-fundo">
+              <div class="barra-progresso" data-progresso="65"></div>
+            </div>
+          </div>
+
+          <div class="card-habilidade">
+            <div class="habilidade-topo">
+              <span>Git & GitHub</span>
+              <span>40%</span>
+            </div>
+            <div class="barra-fundo">
+              <div class="barra-progresso" data-progresso="40"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Idiomas -->
+        <div class="formacao-coluna">
+          <h3 class="formacao-categoria">🌐 Idiomas</h3>
+
+          <div class="card-idioma">
+            <div class="idioma-bandeira">🇧🇷</div>
+            <div class="idioma-info">
+              <span class="idioma-nome">Português</span>
+              <span class="idioma-nivel nivel-nativo">Nativo</span>
+            </div>
+          </div>
+
+          <div class="card-idioma">
+            <div class="idioma-bandeira">🇺🇸</div>
+            <div class="idioma-info">
+              <span class="idioma-nome">Inglês</span>
+              <span class="idioma-nivel nivel-basico">Básico</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO: PORTFÓLIO ========== -->
+  <section id="portfolio" class="secao">
+    <div class="container">
+      <p class="label-secao">// portfólio</p>
+      <h2 class="titulo-secao">Projetos & Trabalhos</h2>
+
+      <div class="portfolio-grid">
+
+        <!-- Projeto 1 -->
+        <article class="card-projeto">
+          <div class="projeto-topo">
+            <span class="projeto-icone">🌐</span>
+            <div class="projeto-links">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="projeto-link" title="Ver no GitHub">
+                &lt;/&gt;
+              </a>
+            </div>
+          </div>
+          <h3 class="projeto-titulo">Portfólio Pessoal</h3>
+          <p class="projeto-desc">
+            Site de portfólio desenvolvido com HTML5, CSS3 e JavaScript puro,
+            sem frameworks. Inclui tema claro/escuro e formulário com validação.
+          </p>
+          <div class="projeto-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </article>
+
+        <!-- Projeto 2 -->
+        <article class="card-projeto">
+          <div class="projeto-topo">
+            <span class="projeto-icone">🧮</span>
+            <div class="projeto-links">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="projeto-link" title="Ver no GitHub">
+                &lt;/&gt;
+              </a>
+            </div>
+          </div>
+          <h3 class="projeto-titulo">Calculadora Web</h3>
+          <p class="projeto-desc">
+            Calculadora funcional desenvolvida em JavaScript com operações básicas,
+            histórico de cálculos e interface responsiva.
+          </p>
+          <div class="projeto-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </article>
+
+        <!-- Projeto 3 -->
+        <article class="card-projeto">
+          <div class="projeto-topo">
+            <span class="projeto-icone">📋</span>
+            <div class="projeto-links">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="projeto-link" title="Ver no GitHub">
+                &lt;/&gt;
+              </a>
+            </div>
+          </div>
+          <h3 class="projeto-titulo">Lista de Tarefas</h3>
+          <p class="projeto-desc">
+            Aplicação To-Do List com funcionalidades de adicionar, concluir e
+            remover tarefas. Dados persistidos via localStorage.
+          </p>
+          <div class="projeto-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </article>
+
+        <!-- Projeto 4 -->
+        <article class="card-projeto">
+          <div class="projeto-topo">
+            <span class="projeto-icone">🎮</span>
+            <div class="projeto-links">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="projeto-link" title="Ver no GitHub">
+                &lt;/&gt;
+              </a>
+            </div>
+          </div>
+          <h3 class="projeto-titulo">Quiz de Games</h3>
+          <p class="projeto-desc">
+            Jogo de perguntas e respostas sobre videogames desenvolvido em JavaScript.
+            Conta com pontuação, timer e ranking de melhores jogadores.
+          </p>
+          <div class="projeto-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO: CONTATO ========== -->
+  <section id="contato" class="secao secao-alt">
+    <div class="container">
+      <p class="label-secao">// contato</p>
+      <h2 class="titulo-secao">Fale Comigo</h2>
+
+      <div class="contato-grid">
+        <!-- Informações de contato -->
+        <div class="contato-info">
+          <p class="contato-texto">
+            Tem algum projeto em mente ou quer bater um papo sobre tecnologia?
+            Manda uma mensagem!
+          </p>
+          <div class="contato-itens">
+            <div class="contato-item">
+              <span class="contato-icone">📧</span>
+              <span>maxapollo@email.com</span>
+            </div>
+            <div class="contato-item">
+              <span class="contato-icone">📍</span>
+              <span>Brasil</span>
+            </div>
+            <div class="contato-item">
+              <span class="contato-icone">🐙</span>
+              <a href="https://github.com/" target="_blank" rel="noopener">github.com/maxapollo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário de contato com validação JavaScript -->
+        <div class="contato-form-container">
+          <form id="form-contato" novalidate>
+
+            <!-- Campo: Nome -->
+            <div class="campo-grupo">
+              <label for="nome" class="campo-label">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                class="campo-input"
+                placeholder="Seu nome completo"
+                autocomplete="name"
+              />
+              <!-- Mensagem de erro exibida via JS -->
+              <span class="campo-erro" id="erro-nome"></span>
+            </div>
+
+            <!-- Campo: E-mail -->
+            <div class="campo-grupo">
+              <label for="email" class="campo-label">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="campo-input"
+                placeholder="seu@email.com"
+                autocomplete="email"
+              />
+              <span class="campo-erro" id="erro-email"></span>
+            </div>
+
+            <!-- Campo: Mensagem -->
+            <div class="campo-grupo">
+              <label for="mensagem" class="campo-label">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                class="campo-input campo-textarea"
+                placeholder="Escreva sua mensagem aqui..."
+                rows="5"
+              ></textarea>
+              <span class="campo-erro" id="erro-mensagem"></span>
+            </div>
+
+            <!-- Botão de envio -->
+            <button type="submit" class="btn-enviar" id="btn-enviar">
+              Enviar Mensagem →
+            </button>
+          </form>
+
+          <!-- Modal de confirmação (exibido via JS após envio) -->
+          <div id="modal-sucesso" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+            <div class="modal-caixa">
+              <div class="modal-icone">✅</div>
+              <h3 id="modal-titulo" class="modal-titulo">Mensagem Enviada!</h3>
+              <p class="modal-texto">Obrigado pelo contato, Max (ou visitante)! Retornarei em breve.</p>
+              <button class="modal-fechar" id="btn-fechar-modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="rodape">
+    <div class="container">
+      <p>Desenvolvido por <strong>Max Apollo dos Santos Sales</strong> &mdash; 2025</p>
+      <p class="rodape-sub">HTML5 · CSS3 · JavaScript puro</p>
+    </div>
+  </footer>
+
+  <!-- Script JavaScript externo (sem frameworks) -->
+  <script src="script.js"></script>
+</body>
+</html>
